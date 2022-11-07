@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import APIPage from './pages/APIPage';
 import GuidePage from './pages/GuidePage';
@@ -23,6 +24,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
+        <Footer/>
     </div>
     </Router>
   );
