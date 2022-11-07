@@ -1,6 +1,6 @@
 function HomePage() {
     return (
-        <section className="about_us">
+        <section className="container pt-3">
             <div>
                 <h2>HomePage</h2>
             </div>
