@@ -2,7 +2,7 @@ function HomePage() {
     return (
         <section className="container pt-3">
             <div>
-                <h2>HomePage</h2>
+                <h1>WhatWeather</h1>
             </div>
         </section>
     )

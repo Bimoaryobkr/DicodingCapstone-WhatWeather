@@ -1,6 +1,6 @@
 function GuidePage() {
     return (
-        <section className="container pt-5">
+        <section className="container pt-3">
             <div className="ms-5 me-5">
                 <h1 className="text-center">Panduan</h1>
                 <h4>Temperatur tinggi (Top Temperature)</h4>

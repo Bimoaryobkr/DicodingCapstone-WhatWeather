@@ -1,24 +1,25 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
 function BasicExample() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand as={Link} to="/">WhatWeather</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/guide/">Guide</Nav.Link>
-            <Nav.Link as={Link} to="/api/">API</Nav.Link>
-            <Nav.Link as={Link} to="/about-us/">About Us</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header>
+      <nav className="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid container">
+          <Link className="navbar-brand" to="/">WhatWeather</Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#basic-navbar-nav" aria-controls="basic-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="basic-navbar-nav">
+            <ul className="me-auto navbar-nav">
+              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/guide/">Guide</Link>
+              <Link className="nav-link" to="/api/">API</Link>
+              <Link className="nav-link" to="/about-us/">About Us</Link>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 }
 
