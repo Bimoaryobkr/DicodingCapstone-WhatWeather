@@ -1,9 +1,10 @@
+import React from "react";
 import { Link } from 'react-router-dom';
 
 function BasicExample() {
   return (
-    <header>
-      <nav className="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+    <header className="navigation_bar">
+      <nav className=" navbar fixed-top navbar-expand-lg navbar-light bg-light pt-3 pb-3">
         <div className="container-fluid container">
           <Link className="navbar-brand" to="/">WhatWeather</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#basic-navbar-nav" aria-controls="basic-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">

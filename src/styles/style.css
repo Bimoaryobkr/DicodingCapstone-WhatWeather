@@ -1,12 +1,66 @@
-main {
-  padding-top: 65px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
-img {
-display: block;
+main {
+  padding-top: 80px;
+}
+
+/* Home Page */
+
+.home_header {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_bar {
+  justify-content: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* API Page */
+
+.api_image {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  max-width: 300px;
 }
 
+/* About Us Page */
+
+.about_us_text {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.profile {
+  justify-content: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature {
+  justify-content: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image_profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.media_icon {
+  padding-top: 10px;
+}
