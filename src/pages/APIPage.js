@@ -1,3 +1,4 @@
+import React from "react";
 import openweather from '../assets/icons/OpenWeather.jpg';
 
 function APIPage() {
@@ -9,15 +10,16 @@ function APIPage() {
                     <div className="col">
                         <div className='card'>
                             <div className="card-body">
-                                <img className='mb-3' variant="top" src={openweather} alt="api" />
+                                <img className='mb-3 api_image' variant="top" src={openweather} alt="api" />
                                 <h5 className='text-center'>Open Weather API</h5>
                                 <p>
                                     OpenWeatherMap adalah sebuah API yang berisi data-data cuaca dari berbagai kota di
                                     seluruh penjuru dunia. API ini dapat mengecek cuaca saat ini, hingga melakukan prakiraan
-                                    cuaca.
+                                    cuaca. Tentunya cukup banyak fitur yang diberikan tergantung paket pilihan yang dipilih dengan
+                                    harga yang berbeda-beda.
                                 </p>
                                 <p>
-                                    Untuk mengakses API tersebut anda dapat mengakses pada bagian ini.
+                                    Untuk mengakses API tersebut, dapat dilihat pada bagian ini.
                                 </p>
                             </div>
                         </div>
@@ -25,12 +27,15 @@ function APIPage() {
                     <div className="col">
                         <div className='card'>
                             <div className="card-body">
-                                <img className='mb-3' variant="top" src={openweather} alt="api" />
+                                <img className='mb-3 api_image' variant="top" src={openweather} alt="api" />
                                 <h5 className='text-center'>IP Geolocation API</h5>
                                 <p>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    IP Geolocation adalah sebuah API yang memberikan informasi mengenai
+                                    keberadaan IP pengguna pada perangkat. API ini digunakan sebagai parameter
+                                    default untuk pencarian kota pada perangkat pengguna.
+                                </p>
+                                <p>
+                                    Untuk mengakses API tersebut, dapat dilihat pada bagian ini.
                                 </p>
                             </div>
                         </div>
