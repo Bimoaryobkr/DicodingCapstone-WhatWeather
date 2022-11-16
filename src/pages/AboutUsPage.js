@@ -58,10 +58,10 @@ function AboutUsPage() {
                                 <div className='media_icon text-center'>
                                     <div className="g-1 row row-cols-2 row-cols-1">
                                         <div className="col">
-                                            <a href="https://www.linkedin.com/in/bimo-aryo-bramantyo-kr"><Icon.Linkedin size={42} /></a>
+                                            <a href="https://www.linkedin.com/in/asatrianggara/"><Icon.Linkedin size={42} /></a>
                                         </div>
                                         <div className="col">
-                                            <a href="https://github.com/Bimoaryobkr"><Icon.Github size={42} /></a>
+                                            <a href="https://github.com/asatrianggara"><Icon.Github size={42} /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -78,10 +78,10 @@ function AboutUsPage() {
                                 <div className='media_icon text-center'>
                                     <div className="g-1 row row-cols-2 row-cols-1">
                                         <div className="col">
-                                            <a href="https://www.linkedin.com/in/bimo-aryo-bramantyo-kr"><Icon.Linkedin size={42} /></a>
+                                            <a href="https://www.linkedin.com/in/kelvin-kurniawan-a54204252/"><Icon.Linkedin size={42} /></a>
                                         </div>
                                         <div className="col">
-                                            <a href="https://github.com/Bimoaryobkr"><Icon.Github size={42} /></a>
+                                            <a href="https://github.com/kelvin-kur"><Icon.Github size={42} /></a>
                                         </div>
                                     </div>
                                 </div>
