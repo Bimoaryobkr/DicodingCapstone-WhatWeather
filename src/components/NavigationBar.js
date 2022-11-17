@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function BasicExample() {
   return (
-    <header className="navigation_bar">
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark pt-3 pb-3">
+    <div className="navigation_bar">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark pt-3 pb-3 border-bottom">
         <div className="container-fluid container navbar_container">
           <Link className="navbar-brand" to="/">WhatWeather</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#basic-navbar-nav" aria-controls="basic-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ function BasicExample() {
           </div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }
 

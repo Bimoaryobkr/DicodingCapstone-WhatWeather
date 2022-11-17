@@ -27,9 +27,9 @@ function AboutUsPage() {
                 <h2>Team Developer</h2>
             </div>
             <div className="pt-3">
-                <div className="g-4 row row-cols-lg-2 row-cols-1 profile w-auto">
+                <div className="g-4 row row-cols-md-2 row-cols-1 profile w-auto">
                     <div className="col">
-                        <div className='card'>
+                        <div className='card shadow'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src={profile} alt="profile" />
                                 <h5 className='text-center pb-3'>Muhammad Aldino Ruswandi</h5>
@@ -49,12 +49,12 @@ function AboutUsPage() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className='card'>
+                        <div className='card shadow'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src={profile} alt="profile" />
                                 <h5 className='text-center pb-3'>Adjie Satria Anggara</h5>
-                                <p className='text-center'>Universitas </p>
-                                <p className='text-center'>Prodi</p>
+                                <p className='text-center'>STIKI Malang</p>
+                                <p className='text-center'>Sistem Informasi Manajemen</p>
                                 <div className='media_icon text-center'>
                                     <div className="g-1 row row-cols-2 row-cols-1">
                                         <div className="col">
@@ -69,12 +69,12 @@ function AboutUsPage() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className='card'>
+                        <div className='card shadow'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src={kelvin} alt="profile" />
                                 <h5 className='text-center pb-3'>Kelvin Kurniawan</h5>
-                                <p className='text-center'>Universitas </p>
-                                <p className='text-center'>Prodi</p>
+                                <p className='text-center'>Universitas Teknologi Digital Indonesia</p>
+                                <p className='text-center'>Sistem Informasi</p>
                                 <div className='media_icon text-center'>
                                     <div className="g-1 row row-cols-2 row-cols-1">
                                         <div className="col">
@@ -89,7 +89,7 @@ function AboutUsPage() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className='card'>
+                        <div className='card shadow'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src={bimo} alt="profile" />
                                 <h5 className='text-center pb-3'>Bimo Aryo Bramantyo KR</h5>

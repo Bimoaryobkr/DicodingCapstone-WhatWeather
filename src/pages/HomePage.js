@@ -1,5 +1,6 @@
 import React from "react";
 import Search from '../components/search';
+import WeatherCard from '../components/WeatherCard';
 
 function HomePage() {
     return (
@@ -16,6 +17,7 @@ function HomePage() {
                 </small>
             </div>
             <Search />
+            <WeatherCard />
         </section>
     )
 }

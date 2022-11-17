@@ -40,6 +40,32 @@ footer {
   margin-right: auto;
 }
 
+.weather_card {
+  justify-content: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.time {
+  opacity: 0.5;
+}
+
+.status {
+  justify-content: center;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(33, 37, 41, 1);
+}
+
+.header_forecast {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* API Page */
 
 .api_image {
