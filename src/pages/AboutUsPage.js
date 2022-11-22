@@ -1,10 +1,5 @@
 import React from "react";
 import profile from '../assets/icons/ProfilePicture.jpg';
-import kelvin from '../assets/images/kelvin.jpg';
-import bimo from '../assets/images/bimo.png';
-import globe from '../assets/images/globe.png';
-import device from '../assets/images/Perangkat.png';
-import forecast from '../assets/images/Forecast.png';
 import * as Icon from 'react-bootstrap-icons';
 
 function AboutUsPage() {
@@ -23,10 +18,51 @@ function AboutUsPage() {
                     </p>
                 </div>
             </div>
-            <div className="text-center mb-3">
+            <div className="mt-5 w-auto feature">
+                <h2 className='text-center'>Kenapa WhatWeather?</h2>
+                <hr></hr>
+                <div className="row align-items-center">
+                    <div className="col-md-7">
+                        <h2>Pencarian kondisi cuaca yang mudah</h2>
+                        <p className="lead">Pencarian informasi mengenai cuaca yang mudah, berdasarkan nama kota yang ada di seluruh dunia.</p>
+                    </div>
+                    <div className="col-md-5">
+                        <img className="bd-placeholder-img bd-placeholder-img-lg image img-fluid mx-auto" src="/images/globe.png" alt="feature" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className="row align-items-center">
+                    <div className="order-md-2 col-md-7">
+                        <h2>Terdapat prakiraan cuaca untuk 3 jam kedepan</h2>
+                        <p className="lead">
+                            Tidak hanya cuaca saat ini, Anda dapat melihat daftar prakiraan cuaca pada kota yang Anda cari
+                            untuk 3 jam kedepan.
+                        </p>
+                    </div>
+                    <div className="order-md-1 col-md-5">
+                        <img className="bd-placeholder-img bd-placeholder-img-lg image img-fluid mx-auto" src="/images/Forecast.png" alt="feature" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className="row align-items-center">
+                    <div className="col-md-7">
+                        <h2>Akses yang mudah</h2>
+                        <p className="lead">
+                            WhatWeather dapat diakses menggunakan browser pada
+                            seluruh perangkat dari Smartphone hingga Desktop.
+                            (Sangat disarankan menggunakan browser Google Chrome versi terbaru)
+                        </p>
+                    </div>
+                    <div className="col-md-5">
+                        <img className="bd-placeholder-img bd-placeholder-img-lg image img-fluid mx-auto" src="/images/Perangkat.png" alt="feature" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    </div>
+                </div>
+                <hr></hr>
+            </div>
+            <div className="text-center mb-3 mt-5">
                 <h2>Team Developer</h2>
             </div>
-            <div className="pt-3">
+            <div className="pt-3 mb-5">
                 <div className="g-4 row row-cols-md-2 row-cols-1 profile w-auto">
                     <div className="col">
                         <div className='card shadow'>
@@ -51,7 +87,7 @@ function AboutUsPage() {
                     <div className="col">
                         <div className='card shadow'>
                             <div className='card-body'>
-                                <img className='image_profile mb-3 rounded-circle' variant="top" src={profile} alt="profile" />
+                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/aji.jpeg" alt="profile" />
                                 <h5 className='text-center pb-3'>Adjie Satria Anggara</h5>
                                 <p className='text-center'>STIKI Malang</p>
                                 <p className='text-center'>Sistem Informasi Manajemen</p>
@@ -71,7 +107,7 @@ function AboutUsPage() {
                     <div className="col">
                         <div className='card shadow'>
                             <div className='card-body'>
-                                <img className='image_profile mb-3 rounded-circle' variant="top" src={kelvin} alt="profile" />
+                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/kelvin.jpg" alt="profile" />
                                 <h5 className='text-center pb-3'>Kelvin Kurniawan</h5>
                                 <p className='text-center'>Universitas Teknologi Digital Indonesia</p>
                                 <p className='text-center'>Sistem Informasi</p>
@@ -91,7 +127,7 @@ function AboutUsPage() {
                     <div className="col">
                         <div className='card shadow'>
                             <div className='card-body'>
-                                <img className='image_profile mb-3 rounded-circle' variant="top" src={bimo} alt="profile" />
+                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/bimo.png" alt="profile" />
                                 <h5 className='text-center pb-3'>Bimo Aryo Bramantyo KR</h5>
                                 <p className='text-center'>Universitas Negeri Semarang</p>
                                 <p className='text-center'>Teknik Informatika</p>
@@ -109,47 +145,6 @@ function AboutUsPage() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="mt-5 w-auto feature">
-                <h2 className='text-center'>Kenapa WhatWeather?</h2>
-                <hr></hr>
-                <div className="row align-items-center">
-                    <div className="col-md-7">
-                        <h2>Pencarian kondisi cuaca yang mudah</h2>
-                        <p className="lead">Pencarian informasi mengenai cuaca yang mudah, berdasarkan nama kota yang ada di seluruh dunia.</p>
-                    </div>
-                    <div className="col-md-5">
-                        <img className="bd-placeholder-img bd-placeholder-img-lg image img-fluid mx-auto" src={globe} alt="feature" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-                    </div>
-                </div>
-                <hr></hr>
-                <div className="row align-items-center">
-                    <div className="order-md-2 col-md-7">
-                        <h2>Terdapat prakiraan cuaca untuk 3 jam kedepan</h2>
-                        <p className="lead">
-                            Tidak hanya cuaca saat ini, Anda dapat melihat daftar prakiraan cuaca pada kota yang Anda cari
-                            untuk 3 jam kedepan.
-                        </p>
-                    </div>
-                    <div className="order-md-1 col-md-5">
-                        <img className="bd-placeholder-img bd-placeholder-img-lg image img-fluid mx-auto" src={forecast} alt="feature" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-                    </div>
-                </div>
-                <hr></hr>
-                <div className="row align-items-center">
-                    <div className="col-md-7">
-                        <h2>Akses yang mudah</h2>
-                        <p className="lead">
-                            WhatWeather dapat diakses menggunakan browser pada
-                            seluruh perangkat dari Smartphone hingga Desktop.
-                            (Sangat disarankan menggunakan browser Google Chrome versi terbaru)
-                        </p>
-                    </div>
-                    <div className="col-md-5">
-                        <img className="bd-placeholder-img bd-placeholder-img-lg image img-fluid mx-auto" src={device} alt="feature" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
-                    </div>
-                </div>
-                <hr></hr>
             </div>
         </section>
     )
