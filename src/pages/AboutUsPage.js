@@ -4,8 +4,8 @@ import * as Icon from 'react-bootstrap-icons';
 
 function AboutUsPage() {
     return (
-        <section className="container pt-3">
-            <div>
+        <section className="container pt-3 about_us">
+            <div className="container_about_us mt-4">
                 <h2 className="text-center mb-4">Tentang Kami</h2>
                 <div className='w-auto about_us_text mb-4'>
                     <p>
@@ -18,8 +18,8 @@ function AboutUsPage() {
                     </p>
                 </div>
             </div>
-            <div className="mt-5 w-auto feature">
-                <h2 className='text-center'>Kenapa WhatWeather?</h2>
+            <div className="mt-4 mb-5 w-auto feature">
+                <h2 className='text-center pb-3'>Kenapa <span className="fw-bolder">What</span>Weather?</h2>
                 <hr></hr>
                 <div className="row align-items-center">
                     <div className="col-md-7">
@@ -59,13 +59,13 @@ function AboutUsPage() {
                 </div>
                 <hr></hr>
             </div>
-            <div className="text-center mb-3 mt-5">
+            <div className="dev_title text-center mb-3">
                 <h2>Team Developer</h2>
             </div>
             <div className="pt-3 mb-5">
                 <div className="g-4 row row-cols-md-2 row-cols-1 profile w-auto">
                     <div className="col">
-                        <div className='card shadow'>
+                        <div className='card shadow border-0'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src={profile} alt="profile" />
                                 <h5 className='text-center pb-3'>Muhammad Aldino Ruswandi</h5>
@@ -85,7 +85,7 @@ function AboutUsPage() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className='card shadow'>
+                        <div className='card shadow border-0'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/aji.jpeg" alt="profile" />
                                 <h5 className='text-center pb-3'>Adjie Satria Anggara</h5>
@@ -105,7 +105,7 @@ function AboutUsPage() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className='card shadow'>
+                        <div className='card shadow border-0'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/kelvin.jpg" alt="profile" />
                                 <h5 className='text-center pb-3'>Kelvin Kurniawan</h5>
@@ -125,7 +125,7 @@ function AboutUsPage() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className='card shadow'>
+                        <div className='card shadow border-0'>
                             <div className='card-body'>
                                 <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/bimo.png" alt="profile" />
                                 <h5 className='text-center pb-3'>Bimo Aryo Bramantyo KR</h5>
