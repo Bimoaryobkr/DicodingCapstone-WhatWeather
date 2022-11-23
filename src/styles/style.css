@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  background-color: #EAEAEA;
 }
 
 main {
@@ -17,6 +18,30 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 1px 0px 1px 0px;
+}
+
+hr {
+  background-color: #3C4048;
+  height: 2px;
+  border: none;
+}
+
+/* Navbar */
+
+.navbar {
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+}
+
+.navbar .nav-item {
+  margin: auto 4px;
+}
+.navbar a {
+  padding-left:12px;
+  padding-right:12px;
+}
+
+.navbar-brand {
+  color: #454545
 }
 
 /* Home Page */
@@ -68,6 +93,10 @@ footer {
 
 /* API Page */
 
+.api_page {
+  color: #3C4048;
+}
+
 .api_image {
   display: block;
   margin-left: auto;
@@ -89,6 +118,14 @@ footer {
 
 /* About Us Page */
 
+.about_us {
+  color: #3C4048;
+}
+
+.container_about_us {
+  margin-bottom: 80px;
+}
+
 .about_us_text {
   max-width: 1100px;
   margin: auto;
@@ -105,6 +142,10 @@ footer {
 .feature {
   max-width: 1100px;
   margin: auto;
+}
+
+.dev_title {
+  margin-top: 80px;
 }
 
 .image_profile {

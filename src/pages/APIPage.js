@@ -2,9 +2,9 @@ import React from "react";
 
 function APIPage() {
     return (
-        <section className="container pt-3">
+        <section className="container pt-3 mb-4 api_page">
             <div>
-                <h1 className="text-center mb-4">API</h1>
+                <h1 className="text-center mt-4 mb-4">API</h1>
                 <div className='w-auto api_text mb-4'>
                     <p>
                         Website ini menggunakan API dalam mengambil informasi-informasi mengenai cuaca. Dalam informasi cuaca, API
