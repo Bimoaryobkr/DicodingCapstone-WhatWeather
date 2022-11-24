@@ -11,21 +11,21 @@ import PageNotFound from './pages/404';
 function App() {
   return (
     <Router>
-    <div className='app-container'>
-      <header className='app_header'>
-        <NavigationBar />
-      </header>
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/api/" element={<APIPage />} />
-          <Route path="/guide/" element={<GuidePage />} />
-          <Route path="/about-us/" element={<AboutUsPage />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </main>
-        <Footer/>
-    </div>
+      <div className='app-container'>
+        <header className='app_header'>
+          <NavigationBar />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/api/" element={<APIPage />} />
+            <Route path="/guide/" element={<GuidePage />} />
+            <Route path="/about-us/" element={<AboutUsPage />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
