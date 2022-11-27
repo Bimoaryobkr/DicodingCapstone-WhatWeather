@@ -3,7 +3,7 @@ const API_ENDPOINTS = {
   DEFAULT_LOC: 'http://ip-api.com/json/',
   TARGET_LOC: 'http://api.openweathermap.org/geo/1.0/direct',
   CURRENT_WEATHER: 'https://api.openweathermap.org/data/2.5/weather',
-  PERIODIC_WEATHER: 'api.openweathermap.org/data/2.5/forecast?',
+  PERIODIC_WEATHER: 'https://api.openweathermap.org/data/2.5/forecast',
 };
 
 export default API_ENDPOINTS;
