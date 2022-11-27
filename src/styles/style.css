@@ -29,7 +29,7 @@ hr {
 /* Navbar */
 
 .navbar {
-  box-shadow: 4px 6px 30px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
 }
 
 .navbar .nav-item {
@@ -100,6 +100,20 @@ hr {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hourly-card {
+  border-radius: 10px;
+  transition: ease-out .15s;
+}
+
+.hourly-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 16px 5px rgba(51, 51, 51, 0.1);
+}
+
+.hourly-card .font-weight-light {
+  margin-top: 1rem;
 }
 
 /* API Page */
