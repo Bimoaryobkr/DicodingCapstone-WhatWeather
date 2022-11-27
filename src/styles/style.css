@@ -101,6 +101,46 @@ hr {
   margin-right: auto;
 }
 
+/* Guide Page*/
+
+.header_card_guide {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: 1px #8D8DAA;
+
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card_desc {
+  background-color: #e0e0e0;
+  padding: 5px;
+}
+
+.title {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.w-symbol{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.column-display {
+  display: inline-block;
+  width: auto;
+  padding: 5px;
+}
+.container-display {
+  margin:auto;
+  text-align: center;
+}
+
+
 /* API Page */
 
 .api_page {
