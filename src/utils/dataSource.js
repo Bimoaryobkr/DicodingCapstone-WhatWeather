@@ -44,11 +44,38 @@ const getCurrentWeather = async (city) => {
   }
 
   const geolocation = response.data;
-  const weatherResponse = await fetch(`${API_ENDPOINTS.CURRENT_WEATHER}?lat=${geolocation.lat}&lon=${geolocation.lon}&appid=${API_ENDPOINTS.WEATHER_API_KEY}&units=metric&mode=json`);
-  const weatherResponseJson = await weatherResponse.json();
-  const formattedWeather = DataFormat.format(weatherResponseJson);
+  const currentWeatherResponse = await fetch(`${API_ENDPOINTS.CURRENT_WEATHER}?lat=${geolocation.lat}&lon=${geolocation.lon}&appid=${API_ENDPOINTS.WEATHER_API_KEY}&units=metric&lang=id&mode=json`);
+  const currentWeatherJson = await currentWeatherResponse.json();
+  const formattedWeather = DataFormat.format(currentWeatherJson);
 
   return formattedWeather;
 };
 
-export default getCurrentWeather;
+const getForecastWeather = async ({ city, initialTimeUnixEpoch }) => {
+  const response = (Boolean(city) === false) ? await getDefaultLoc() : await getQueriedLoc(city);
+
+  const geolocation = response.data;
+  const hourlyForecastResponse = await fetch(`${API_ENDPOINTS.PERIODIC_WEATHER}?lat=${geolocation.lat}&lon=${geolocation.lon}&appid=${API_ENDPOINTS.WEATHER_API_KEY}&units=metric&cnt=8&lang=id&mode=json`);
+  const hourlyForecastJson = await hourlyForecastResponse.json();
+  const hourlyForecast = DataFormat.determineTimeRange({ initialTimeUnixEpoch, forecastArray: hourlyForecastJson.list });
+
+  const formattedHourlyForecast = [];
+  for (const weatherData of hourlyForecast) {
+    weatherData.name = hourlyForecastJson.city.name;
+    weatherData.sys.country = hourlyForecastJson.city.country;
+    const formattedWeatherData = DataFormat.format(weatherData);
+    formattedHourlyForecast.push(formattedWeatherData);
+  }
+
+  return formattedHourlyForecast;
+};
+
+const getWeather = async (city) => {
+  const currentWeather = await getCurrentWeather(city);
+  const timezone = currentWeather.timezone;
+  const initialTimeUnixEpoch = currentWeather.dt;
+  const hourlyForecast = await getForecastWeather({ city, timezone, initialTimeUnixEpoch });
+  return [currentWeather, ...hourlyForecast];
+};
+
+export default getWeather;
