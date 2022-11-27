@@ -89,40 +89,40 @@ function WeatherCardGuide() {
                     </div>
 
                     <div className="card-body container-display">
-                    <h5 className="title"><b>Daftar Weather Symbol</b></h5>
+                    <h5><b>Daftar Weather Symbol</b></h5>
                     <div className="row align-items-center column-display">
                         <div className="col-md-3 column-display">
-                            <div className="col align-items-center justify-content-center text-center w-symbol">
+                            <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDayLightning className="weather_icon" size={50} />
                                 <p className="font-weight-light">Lightning</p>
                             </div>
-                            <div className="col align-items-center justify-content-center text-center w-symbol">
+                            <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDayStormShowers className="weather_icon" size={50} />
                                 <p className="font-weight-light">Storm</p>
                             </div>
-                            <div className="col align-items-center justify-content-center text-center w-symbol">
+                            <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDayCloudyWindy className="weather_icon" size={50} />
                                 <p className="font-weight-light">Cloudy Windy</p>
                             </div>
-                            <div className="col align-items-center justify-content-center text-center w-symbol">
+                            <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDayFog className="weather_icon" size={50} />
                                 <p className="font-weight-light">Fog</p>
                             </div>
                         </div>
                         <div className="col-md-3 column-display">
-                        <div className="col align-items-center justify-content-center text-center w-symbol">
+                        <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDaySunny className="weather_icon" size={50} />
                                 <p className="font-weight-light">Sunny</p>
                             </div>
-                            <div className="col align-items-center justify-content-center text-center w-symbol">
+                            <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDayCloudy className="weather_icon" size={50} />
                                 <p className="font-weight-light">Cloudy</p>
                             </div>
-                            <div className="col align-items-center justify-content-center text-center w-symbol">
+                            <div className="col align-items-center justify-content-center text-center w-symbol shadow">
                                 <WiDayRain className="weather_icon" size={50} />
                                 <p className="font-weight-light">Rain</p>
                             </div>
-                            <div className="col align-items-center justify-content-center text-center  w-symbol">
+                            <div className="col align-items-center justify-content-center text-center  w-symbol shadow">
                                 <WiDayCloudyGusts className="weather_icon" size={50} />
                                 <p className="font-weight-light">Cloudy Gust</p>
                             </div>
