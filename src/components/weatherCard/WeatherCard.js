@@ -11,6 +11,10 @@ function WeatherCard({ weathers }) {
     setPrimaryWeather(selectedWeather);
   };
 
+  React.useEffect(() => {
+    setPrimaryWeather(weathers[0]);
+  }, [weathers]);
+
   return (
     <div className='container'>
       <div className='card mt-5 mb-2 weather_card py-1 shadow'>
