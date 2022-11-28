@@ -1,8 +1,12 @@
+import * as moment from 'moment-timezone';
+
 class DataFormat {
-  static format(weatherData) {
+  static format({ weatherData, forecast }) {
     const dateTimeData = this._formatDateTime({
-      timezone: weatherData.timezone,
-      unixEpochTime: weatherData?.dt
+      forecast,
+      country: weatherData.sys.country,
+      unixEpochTime: weatherData?.dt,
+      dt_txt: weatherData.dt_txt
     });
 
     const weather = {
@@ -30,28 +34,29 @@ class DataFormat {
     return weather;
   }
 
-  static _formatDateTime({ timezone, unixEpochTime }) {
-    const currentLocaleTime = new Date(unixEpochTime * 1000);
+  static _formatDateTime({ forecast, country, unixEpochTime, dt_txt }) {
+    const regionTimezone = moment.tz.zonesForCountry(country)[0];
+    const regionTime = forecast
+      ? moment.tz(dt_txt, regionTimezone)
+      : moment.tz((unixEpochTime * 1000), regionTimezone);
 
-    if (Boolean(timezone) !== false) {
-      currentLocaleTime.setHours((currentLocaleTime.getHours() - 7) + (timezone / 3600));
-    } else {
-      currentLocaleTime.setHours(currentLocaleTime.getHours() - 7);
-    }
-
-    const date = currentLocaleTime.toDateString();
-    const time = currentLocaleTime.toTimeString().slice(0, 5);
+    const date = regionTime.format('MM-DD');
+    const time = regionTime.format('HH:mm');
 
     return { time, date };
   }
 
-  static determineTimeRange({ initialTimeUnixEpoch, forecastArray }) {
+  static determineTimeRange({ unixEpochTime, country, forecastArray }) {
     const forecastRange = [];
-    const initialTime = new Date(initialTimeUnixEpoch * 1000);
+    const regionTimezone = moment.tz.zonesForCountry(country)[0];
+    const locationInitTime = moment.tz((unixEpochTime * 1000), regionTimezone);
 
     for (const hourlyData of forecastArray) {
-      const hourlyDate = new Date(hourlyData.dt_txt);
-      if ((hourlyDate > initialTime) && (forecastRange.length !== 3)) forecastRange.push(hourlyData);
+      const hourlyReportDatetime = moment.tz(hourlyData.dt_txt, regionTimezone);
+
+      if ((hourlyReportDatetime.isAfter(locationInitTime)) && (forecastRange.length !== 3)) {
+        forecastRange.push(hourlyData);
+      }
     }
 
     return forecastRange;
