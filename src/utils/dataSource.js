@@ -21,7 +21,7 @@ const getDefaultLoc = async () => {
 };
 
 const getQueriedLoc = async (city) => {
-  const response = await fetch(`${API_ENDPOINTS.TARGET_LOC}?q=${city}&${API_ENDPOINTS.WEATHER_API_KEY}&limit=1`);
+  const response = await fetch(`${API_ENDPOINTS.TARGET_LOC}?q=${city}&appid=${API_ENDPOINTS.WEATHER_API_KEY}&limit=1`);
   const responseJson = await response.json();
 
   if (responseJson.length === 0) return { error: true, data: null };
