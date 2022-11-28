@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Search from '../components/search';
+import Search from '../components/Search';
 import WeatherCard from '../components/weatherCard/WeatherCard';
 import getWeather from '../utils/dataSource';
 
@@ -15,6 +15,11 @@ function HomePage() {
     setSearchParam({ city: cityKeyword });
   };
 
+  const refreshWeather = async (city) => {
+    const weathers = await getWeather(city);
+    setWeathers(weathers);
+  };
+
   React.useEffect(() => {
     const fetchWeather = async () => {
       const weathersResponse = await getWeather();
@@ -24,8 +29,8 @@ function HomePage() {
     fetchWeather().then(() => setLoading(false));
   }, []);
 
-  let homepageContent = (
-    <section className='container pt-3'>
+  return (
+    loading ? null : <section className='container pt-3'>
       <div className='home_header border-bottom'>
         <h1>WhatWeather</h1>
       </div>
@@ -37,13 +42,9 @@ function HomePage() {
           Sebagai contoh Jakarta, ID.
         </small>
       </div>
-      <Search defaultKeyword={cityKeyword} onSearch={onSearch} />
+      <Search defaultKeyword={cityKeyword} refreshWeather={refreshWeather} onSearch={onSearch} />
       <WeatherCard weathers={weathers} />
     </section>
-  );
-
-  return (
-    loading ? null : homepageContent
   );
 }
 
