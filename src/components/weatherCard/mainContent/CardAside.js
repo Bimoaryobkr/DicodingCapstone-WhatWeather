@@ -17,7 +17,7 @@ function CardAside({ temp, feelsLike, wind, humidity }) {
       </div>
       <div>
         <WiStrongWind className='weather_icon' size={35} />
-        <span> Kecepatan : {wind} km/jam</span>
+        <span> Kecepatan : {wind} m/jam</span>
       </div>
       <div>
         <WiHumidity className='weather_icon' size={35} />
