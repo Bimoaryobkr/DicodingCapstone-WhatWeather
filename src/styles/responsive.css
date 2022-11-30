@@ -1,0 +1,5 @@
+@media screen and (max-width: 1000px) {
+  .detail-chart {
+    height: 50% !important;
+  }
+}
