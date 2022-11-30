@@ -4,6 +4,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   background-color: #EAEAEA;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.--disable-scroll {
+  overflow-y: hidden;
 }
 
 main {
@@ -114,6 +120,36 @@ hr {
 
 .hourly-card .font-weight-light {
   margin-top: 1rem;
+}
+
+.detail-chart-wrapper {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: .15s ease;
+}
+
+.detail-chart-wrapper--visible {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.detail-chart {
+  width: 80% !important;
+  height: 80% !important;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 /* Guide Page*/
