@@ -61,6 +61,34 @@ class DataFormat {
 
     return forecastRange;
   }
+
+  static formatWeatherDataset(weatherData) {
+    const data = {
+      labels: weatherData.map((datum) => datum.weatherInfo.time),
+      datasets: [
+        {
+          label: 'Suhu utama',
+          data: weatherData.map((datum) => datum.weatherInfo.temp.main),
+          backgroundColor: 'rgba(255, 228, 75, 0.3)',
+          borderColor: 'rgb(255, 228, 75)',
+        },
+        {
+          label: 'Suhu terendah',
+          data: weatherData.map((datum) => datum.weatherInfo.temp.low),
+          backgroundColor: 'rgba(55, 160, 235, 0.3)',
+          borderColor: 'rgb(55, 160, 235)',
+        },
+        {
+          label: 'Suhu tertinggi',
+          data: weatherData.map((datum) => datum.weatherInfo.temp.high),
+          backgroundColor: 'rgba(255, 85, 125, 0.3)',
+          borderColor: 'rgb(255, 85, 125)',
+        },
+      ]
+    }
+
+    return data;
+  }
 }
 
 export default DataFormat;
