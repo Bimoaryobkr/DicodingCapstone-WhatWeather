@@ -144,9 +144,12 @@ hr {
   visibility: visible;
 }
 
+.detail-chart-inner-wrapper {
+  width: 80%;
+  min-height: 50%;
+}
+
 .detail-chart {
-  width: 80% !important;
-  height: 80% !important;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
