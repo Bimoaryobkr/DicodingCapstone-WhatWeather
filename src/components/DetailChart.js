@@ -44,11 +44,14 @@ function DetailChart({ weatherData }) {
       },
     },
     maintainAspectRatio: false,
+    responsive: true,
   };
 
   return (
     <div onClick={detailChartWrapperOnClick} className='detail-chart-wrapper'>
-      <Line className='detail-chart' options={detailChartOptions} data={weatherData} />
+      <div className='detail-chart-inner-wrapper'>
+        <Line className='detail-chart' options={detailChartOptions} data={weatherData} />
+      </div>
     </div>
   );
 }
