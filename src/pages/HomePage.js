@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Search from '../components/Search';
+import SearchBar from '../components/search';
 import WeatherCard from '../components/weatherCard/WeatherCard';
 import getWeather from '../utils/dataSource';
 
@@ -41,7 +41,7 @@ function HomePage() {
         Sebagai contoh Jakarta, ID.
       </small>
     </div>
-    <Search defaultKeyword={cityKeyword} refreshWeather={refreshWeather} onSearch={onSearch} />
+    <SearchBar defaultKeyword={cityKeyword} refreshWeather={refreshWeather} onSearch={onSearch} />
     <WeatherCard weathers={weathers} />
   </section>;
 
