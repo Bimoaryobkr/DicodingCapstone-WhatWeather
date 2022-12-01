@@ -5,17 +5,12 @@ const getDefaultLoc = async () => {
   const response = await fetch(API_ENDPOINTS.DEFAULT_LOC);
   const responseJson = await response.json();
 
-  if (responseJson.status !== 'success') {
-    alert(responseJson.message);
-    return { error: true, data: null };
-  }
-
   return {
     error: false, data: {
-      countryCode: responseJson.countryCode,
+      countryCode: responseJson.country_code,
       city: responseJson.city,
-      lat: responseJson.lat,
-      lon: responseJson.lon,
+      lat: responseJson.latitude,
+      lon: responseJson.longitude,
     }
   };
 };
