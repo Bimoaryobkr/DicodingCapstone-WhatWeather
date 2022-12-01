@@ -87,7 +87,7 @@ function AboutUsPage() {
                     <div className="col">
                         <div className='card shadow border-0'>
                             <div className='card-body'>
-                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/aji.jpeg" alt="profile" />
+                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/aji.png" alt="profile" />
                                 <h5 className='text-center pb-3'>Adjie Satria Anggara</h5>
                                 <p className='text-center'>STIKI Malang</p>
                                 <p className='text-center'>Sistem Informasi Manajemen</p>
@@ -107,7 +107,7 @@ function AboutUsPage() {
                     <div className="col">
                         <div className='card shadow border-0'>
                             <div className='card-body'>
-                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/kelvin.jpg" alt="profile" />
+                                <img className='image_profile mb-3 rounded-circle' variant="top" src="/images/kelvin.png" alt="profile" />
                                 <h5 className='text-center pb-3'>Kelvin Kurniawan</h5>
                                 <p className='text-center'>Universitas Teknologi Digital Indonesia</p>
                                 <p className='text-center'>Sistem Informasi</p>

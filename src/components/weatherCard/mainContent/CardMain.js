@@ -1,5 +1,4 @@
 import React from 'react';
-import { WiDayFog } from 'react-icons/wi';
 
 function CardMain({ city, country, weatherInfo }) {
   return (
@@ -7,7 +6,7 @@ function CardMain({ city, country, weatherInfo }) {
       <h4 className="text-center mt-3">{city}</h4>
       <p className="text-center time pb-3">{country}, {weatherInfo.time}</p>
       <div className="text-center">
-        <WiDayFog className="weather_icon" size={150} />
+        <img src={`http://openweathermap.org/img/wn/${weatherInfo.icon}@2x.png`} alt="" />
       </div>
       <h2 className="text-center mt-4 mb-4">{weatherInfo.name}</h2>
     </div>

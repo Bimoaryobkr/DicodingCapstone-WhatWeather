@@ -25,7 +25,7 @@ function APIPage() {
                         <p className="mb-1">Situs OpenWeather Map</p>
                         <small className="mb-1">Akses Gratis maupun Berbayar, Membutuhkan API Key, Memiliki fitur sesuai dengan paket yang dipilih </small>
                     </a>
-                    <a className="list-group-item list-group-item-action" href="https://ip-api.com/">
+                    <a className="list-group-item list-group-item-action" href="https://ipapi.co/api/">
                         <div className="d-flex justify-content-between w-100">
                             <h4 className="mb-1">IP Geolocation</h4>
                         </div>

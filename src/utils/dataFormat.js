@@ -18,6 +18,7 @@ class DataFormat {
         description: `${weatherData.weather[0].description[0].toUpperCase()}${weatherData.weather[0].description.slice(1)}`,
         feelsLike: weatherData.main.feels_like,
         name: weatherData.weather[0].main,
+        icon: weatherData.weather[0].icon,
         time: dateTimeData.time,
         date: dateTimeData.date,
         temp: {
