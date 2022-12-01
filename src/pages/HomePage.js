@@ -29,7 +29,7 @@ function HomePage() {
     fetchWeather().then(() => setLoading(false));
   }, []);
 
-  const homepageContent = <section className='container pt-3'>
+  const homepageContent = <section className='container pt-3 mt-4'>
     <div className='home_header border-bottom'>
       <h1>WhatWeather</h1>
     </div>
