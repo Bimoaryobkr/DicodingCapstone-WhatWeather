@@ -31,14 +31,13 @@ function HomePage() {
 
   const homepageContent = <section className='container pt-3 mt-4'>
     <div className='home_header border-bottom'>
-      <h1>WhatWeather</h1>
+      <h1><span className="fw-bolder">What</span>Weather</h1>
     </div>
     <div className='home_example mt-3'>
       <h5>Cara melakukan pencarian</h5>
       <small>
-        Silahkan melakukan pencarian dengan menggunakan nama kota. Untuk hasil
-        yang lebih tepat gunakan nama kota beri koma kemudian 2 kode negaranya.
-        Sebagai contoh Jakarta, ID.
+        Silahkan melakukan pencarian dengan menggunakan nama kota. Anda dapat melihat detail
+        prakiraan cuaca tiap 3 jam. Pada detail akan menampilkan grafik suhu saat ini, terendah, dan tertinggi.
       </small>
     </div>
     <SearchBar defaultKeyword={cityKeyword} refreshWeather={refreshWeather} onSearch={onSearch} />

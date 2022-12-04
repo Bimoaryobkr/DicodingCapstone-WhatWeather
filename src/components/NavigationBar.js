@@ -13,16 +13,16 @@ function BasicExample() {
           <div className="collapse navbar-collapse" id="basic-navbar-nav">
             <ul className="ms-auto navbar-nav">
               <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" to="/guide/">Guide</Link>
+                <Link className="nav-link" to="/guide/">Guide</Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" to="/api/">API</Link>
+                <Link className="nav-link" to="/api/">API</Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" to="/about-us/">About Us</Link>
+                <Link className="nav-link" to="/about-us/">About Us</Link>
               </li>
             </ul>
           </div>
