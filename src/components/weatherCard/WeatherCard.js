@@ -38,7 +38,7 @@ function WeatherCard({ weathers }) {
       </div>
       <HourlyReport weathers={weathers} onClick={onClick} />
       <div className='text-center my-3'>
-        <button onClick={detailOnClick} type='button' className='btn btn-dark'>Detail {'>>'}</button>
+        <button onClick={detailOnClick} type='button' className='btn btn-dark'>Detail Suhu</button>
         <DetailChart weatherData={weatherDataset} />
       </div>
     </div>
