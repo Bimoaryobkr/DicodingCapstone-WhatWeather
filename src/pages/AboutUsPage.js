@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../components/AboutUsCard";
+import AboutUs from "../components/AboutUs";
 import Feature from "../components/FeatureCard";
 import Team from "../components/OurTeamCard";
 

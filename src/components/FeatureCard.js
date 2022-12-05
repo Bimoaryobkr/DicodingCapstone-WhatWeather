@@ -17,10 +17,10 @@ function FeatureCard() {
             <hr></hr>
             <div className="row align-items-center">
                 <div className="order-md-2 col-md-7">
-                    <h2>Terdapat prakiraan cuaca untuk 3 jam kedepan</h2>
+                    <h2>Terdapat prakiraan cuaca tiap 3 jam kedepan</h2>
                     <p className="lead">
                         Tidak hanya cuaca saat ini, Anda dapat melihat daftar prakiraan cuaca pada kota yang Anda cari
-                        untuk 3 jam kedepan.
+                        tiap 3 jam kedepan.
                     </p>
                 </div>
                 <div className="order-md-1 col-md-5">
