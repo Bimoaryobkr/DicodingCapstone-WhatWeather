@@ -30,7 +30,7 @@ function HomePage() {
   }, []);
 
   const homepageContent = <section className='container pt-3 mt-4'>
-    <div className='home_header border-bottom'>
+    <div className='home_header'>
       <h1><span className="fw-bolder">What</span>Weather</h1>
     </div>
     <div className='home_example mt-3'>

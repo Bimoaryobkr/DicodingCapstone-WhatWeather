@@ -3,7 +3,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  background-color: #EAEAEA;
+  background-color: #e9ecef;
   overflow-x: hidden;
   position: relative;
 }
@@ -24,7 +24,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 1px 0px 1px 0px;
-  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.25)
+  box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.05)
 }
 
 hr {
@@ -58,6 +58,7 @@ hr {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: solid #a1a7b3;
 }
 
 .header_card {
@@ -268,9 +269,19 @@ hr {
 /* 404 Page */
 
 .page_error {
-  max-width: 400px;
-  padding-bottom: 100px;
+  position: relative;
+  height: 77vh;
+}
+
+.error_card {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-35%);
+}
+
+.error_desc {
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
 }

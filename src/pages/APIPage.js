@@ -1,5 +1,5 @@
 import React from "react";
-import APIDesc from "../components/APIDescCard";
+import APIDesc from "../components/APIDesc";
 import APILink from "../components/APILinkCard";
 
 function APIPage() {
