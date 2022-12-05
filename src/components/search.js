@@ -17,7 +17,7 @@ function SearchBar({ defaultKeyword, refreshWeather, onSearch }) {
     <div>
       <form onSubmit={onSubmit} className='d-flex search_bar my-4'>
         <input onChange={onSearchChange} value={keyword} placeholder='Search' aria-label='Search' type='search' className='me-2 form-control' />
-        <button type='submit' className='btn btn-dark'>Search</button>
+        <button type='submit' className='btn'>Search</button>
       </form>
     </div>
   )
