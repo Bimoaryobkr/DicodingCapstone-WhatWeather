@@ -30,7 +30,7 @@ hr {
 
 .navbar {
   box-shadow: 0px 1px 10px #999;
-  background-color: #71a5de;
+  background-color: #091d36;
 }
 
 .navbar .nav-item {
@@ -57,7 +57,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 1px 0px 1px 0px;
-  background-color: #71a5de;
+  background-color: #091d36;
   color: white;
   box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.2)
 }
@@ -65,7 +65,7 @@ footer {
 /* Button */
 
 .btn {
-  background-color: #4b9cf9;
+  background-color: #2f77c9;
   color: #f1f1f0;
 }
 
