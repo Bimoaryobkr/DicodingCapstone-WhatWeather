@@ -3,8 +3,8 @@ import React from "react";
 function APIDesc() {
     return (
         <div>
-            <h1 className="text-center mt-4 mb-4">API</h1>
-            <div className='w-auto api_text mb-4'>
+            <h1 className="text-center mt-3 mb-4">API</h1>
+            <div className='w-auto api_text mb-5'>
                 <p>
                     Website ini menggunakan API dalam mengambil informasi-informasi mengenai cuaca. Dalam informasi cuaca, API
                     yang digunakan adalah API OpenWeatherMap yang dibuat oleh OpenWeather yang merupakan Team IT Expert
