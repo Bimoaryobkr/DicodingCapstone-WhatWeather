@@ -10,7 +10,7 @@ function Hero() {
                         <div className="hero-text">
                             <h1 className="text-white" >Lakukan Pencarian Cuaca Berdasarkan Kota</h1>
                             <Link className="btn custom-btn mt-3" to="/search/">Get Started!</Link>
-                            <strong className="d-block py-3 pl-5 text-white">0812-2519-7072</strong>
+                            <small className="d-block py-3 pl-5 text-white">Pastikan menggunakan koneksi yang baik.</small>
                         </div>
                     </div>
                     <div className="col-12 col-lg-6">
