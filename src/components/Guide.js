@@ -28,7 +28,6 @@ function Guide(){
             <p>Halaman ini menjelaskan simbol cuaca dan data prakiraan kami, yang akan membantu Anda mendapatkan pembacaan prakiraan yang lebih akurat.</p>
             </div>
             <WeatherCardGuide weathers={weathers}/>
-            {/* <WeatherCard weathers={weathers} /> */}
         </div>
         </>
     )
