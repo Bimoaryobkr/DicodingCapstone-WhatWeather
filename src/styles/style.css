@@ -148,9 +148,9 @@ footer {
 
 .detail-chart-wrapper {
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   left: 0;
-  z-index: 1050;
+  z-index: 500;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -163,7 +163,7 @@ footer {
 }
 
 .detail-chart-wrapper--visible {
-  bottom: 0;
+  position: fixed;
   opacity: 1;
   visibility: visible;
 }
@@ -219,6 +219,17 @@ footer {
   text-align: center;
 }
 
+.chart-img{
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  min-height: 50%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* API Page */
 

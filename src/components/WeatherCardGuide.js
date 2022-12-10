@@ -4,8 +4,22 @@ import { WiStrongWind } from "react-icons/wi";
 import { WiHumidity } from "react-icons/wi";
 import { WiThermometerExterior } from "react-icons/wi";
 import { WiThermometer } from "react-icons/wi";
+import DetailChart from "./DetailChart";
+import DataFormat from "../utils/dataFormat";
 
-function WeatherCardGuide() {
+function WeatherCardGuide({ weathers }) {
+
+    const weatherDataset = DataFormat.formatWeatherDataset(weathers);
+    const detailChart = document.querySelector('.detail-chart-wrapper');
+    
+    const detailOnClick = (event) => {
+        event.stopPropagation();
+        const detailChart = document.querySelector('.detail-chart-wrapper');
+        detailChart.classList.add('detail-chart-wrapper--visible');
+        document.body.classList.add('--disable-scroll');
+      };
+    
+
     return (
 
      
@@ -134,7 +148,57 @@ function WeatherCardGuide() {
                     <div className="g-3 row row-cols-md-3 row-cols-1 mt-1">
                             
                     </div>
-            </div>            
+            </div>    
+
+            <h2>4. Membaca Prakiraan per Jam</h2>
+            <div className="card mt-5 mb-2 weather_card py-1 shadow">
+                        <div className="card-body">
+                            <div className="header_forecast">
+                            <h5>Prakiraan Cuaca per Jam</h5>
+                            </div>
+                            <div className="border-top border-bottom">
+                            <div className="g-4 row row-cols-md-4 row-cols-1 mt-1">
+                            
+                                <div className='hourly-card col align-items-center justify-content-center text-center'>
+                                    <p className='font-weight-light'>Rain</p>
+                                    <WiDayRain className="weather_icon" size={50} />
+                                    <p>10.32</p>
+                                </div>
+                                <div className='hourly-card col align-items-center justify-content-center text-center'>
+                                    <p className='font-weight-light'>Cloudy</p>
+                                    <WiDayCloudy className="weather_icon" size={50} />
+                                    <p>11.00</p>
+                                </div>
+                                <div className='hourly-card col align-items-center justify-content-center text-center'>
+                                    <p className='font-weight-light'>Cloudy</p>
+                                    <WiDayCloudy className="weather_icon" size={50} />
+                                    <p>14.00</p>
+                                </div>
+                                <div className='hourly-card col align-items-center justify-content-center text-center'>
+                                    <p className='font-weight-light'>Sunny</p>
+                                    <WiDaySunny className="weather_icon" size={50} />
+                                    <p>17.00</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+            </div>
+            <div className='text-center my-3'>
+                <button onClick={detailOnClick} type='button' className='btn'>Detail Suhu</button>
+                <DetailChart weatherData={weatherDataset} />
+            </div>
+
+            <div className="card mt-4 mb-4 weather_card py-1 card_desc">
+                <div className="card_desc">
+                <p className="header_card_guide">Bagian ini menunjukkan 4 informasi <b>'Prakiraan cuaca'</b> di waktu yang akan datang dengan masing-masing interval waktu selama 3 jam. Prakiraan cuaca ini akan membantu anda mempersiapkan diri untuk menghadapi cuaca yang akan datang.</p>
+                <img className='chart-img mb-3' variant="top" src="/images/chart.png" alt="chart" />
+                <p>Anda dapat klik tombol <b>Detail Suhu</b> diatas. Tombol tersebut akan memunculkan <em>pop-up chart</em> yang menunjukkan informasi mengenai prakiraan puncak suhu tertinggi dan terendah beberapa jam kedepan dalam bentuk grafik. </p>
+                <p>Sumbu <b>X</b> melambangkan waktu dengan interval waktu 3 jam, sedangkan sumbu <b>Y</b> melambangkan besar suhu dalam satuan celcius.</p>
+                <p>Grafik <em>chart</em> tersebut mempunyai tiga filter yang anda dapat klik untuk membantu anda melihat masing-masing titik terendah, utama dan tertinggi.</p>
+                </div>
+            </div>
+
         </div>
     </div>
     )
