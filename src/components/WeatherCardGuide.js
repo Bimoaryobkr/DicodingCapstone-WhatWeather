@@ -10,7 +10,6 @@ import DataFormat from "../utils/dataFormat";
 function WeatherCardGuide({ weathers }) {
 
     const weatherDataset = DataFormat.formatWeatherDataset(weathers);
-    const detailChart = document.querySelector('.detail-chart-wrapper');
     
     const detailOnClick = (event) => {
         event.stopPropagation();
