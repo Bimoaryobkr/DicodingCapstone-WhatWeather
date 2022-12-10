@@ -1,6 +1,5 @@
 import React from "react";
 import WeatherCardGuide from "../components/WeatherCardGuide";
-import WeatherCard from '../components/weatherCard/WeatherCard';
 import getWeather from '../utils/dataSource';
 
 
